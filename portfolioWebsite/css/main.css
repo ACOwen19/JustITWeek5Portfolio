@@ -182,7 +182,7 @@
 }
 
 .about-section {
-	padding-top: 10rem;
+	padding-top: 5rem;
 	background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
@@ -191,7 +191,7 @@
 }
 
 .skills-section {
-	padding-top: 10rem;
+	padding-top: 5rem;
 	background: linear-gradient(to top, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
@@ -200,7 +200,7 @@
 }
 
 .projects-section {
-	padding: 10rem 0;
+	padding: 5rem 0;
 }
 
 .projects-section .featured-text {
@@ -350,7 +350,7 @@ footer {
 .timeline > li {
   position: relative;
   min-height: 50px;
-  margin-bottom: 50px;
+/*  margin-bottom: 50px;*/
 }
 
 .timeline > li:after, .timeline > li:before {
@@ -449,7 +449,7 @@ footer {
   }
   .timeline > li {
     min-height: 100px;
-    margin-bottom: 100px;
+/*    margin-bottom: 100px;*/
   }
   .timeline > li .timeline-panel {
     float: left;
