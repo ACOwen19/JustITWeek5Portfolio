@@ -111,30 +111,43 @@ rgb(221, 223, 212)
 	height: auto;
 	min-height: 35rem;
 	padding: 15rem 0;
-	background: linear-gradient(to bottom, rgba(63, 176, 172, 0.1) 0%, rgba(63, 176, 172, 0.25) 75%, rgb(63, 176, 172) 100%), url("../img/cardBGMasthead.jpg");
+	background: linear-gradient(to bottom, rgba(63, 176, 172, 0.1) 0%, rgba(63, 176, 172, 0.25) 75%, rgb(63, 176, 172) 100%), url("../img/owlBGOne.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
+    color: rgb(23, 62, 67);
+    text-shadow:
+		-1px -1px 0 rgb(221, 223, 212),
+		1px -1px 0 rgb(221, 223, 212),
+		-1px 1px 0 rgb(221, 223, 212),
+		1px 1px 0 rgb(221, 223, 212);
 }
 
 .masthead h1 {
 	font-family: "Roboto Slab", serif;
 	font-size: 2.5rem;
-	line-height: 2.5rem;
+	line-height: 5rem;
 	letter-spacing: 0.8rem;
-	background: -webkit-linear-gradient(rgba(23, 62, 67, 1), rgba(23, 62, 67, 0.8));
+    
+/*
+	background: -webkit-linear-gradient(rgba(63, 176, 172, 1), rgba(63, 176, 172, 0.8));
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
+*/
+   
 }
 
 .masthead h2 {
 	font-family: "Roboto Slab", serif;
 	max-width: 20rem;
 	font-size: 1rem;
+     color: rgb(23, 62, 67);
+/*
 	background: -webkit-linear-gradient(rgba(23, 62, 67, 1), rgba(23, 62, 67, 1));
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
+*/
 }
 
 @media (min-width: 768px) {
@@ -151,7 +164,7 @@ rgb(221, 223, 212)
 	}
 	.masthead h1 {
 		font-size: 6.5rem;
-		line-height: 6.5rem;
+		line-height: 8rem;
 		letter-spacing: 0.8rem;
 	}
 	.masthead h2 {
@@ -162,12 +175,12 @@ rgb(221, 223, 212)
 
 
 .about-section {
-	padding-top: 5rem;
+	padding-top: 2.5rem;
 	background: linear-gradient(to top, rgba(63, 176, 172, 0.5) 0%, rgba(63, 176, 172, 0.75) 75%, rgb(63, 176, 172) 100%);
 }
 
 .about-section p {
-	margin-bottom: 5rem;
+	margin-bottom: 1rem;
 }
 
 #aboutPic {
@@ -175,7 +188,7 @@ rgb(221, 223, 212)
 }
 
 .skills-section {
-	padding-top: 5rem;
+	
 	background: linear-gradient(to top, rgb(63, 176, 172) 0%, rgba(63, 176, 172, 0.75) 75%, rgba(63, 176, 172, 0.5) 100%);
 }
 
@@ -184,7 +197,8 @@ rgb(221, 223, 212)
 }
 
 .history-section {
-	padding-top: 5rem;
+	padding-top: 2.5rem;
+    padding-bottom: 6rem;
 	background:  rgb(63, 176, 172);
 }
 
@@ -195,21 +209,18 @@ rgb(221, 223, 212)
 
 
 .projects-section {
-	padding-top: 10rem;
+	padding-top: 2.5rem;
 	
 	background: linear-gradient(to top, rgba(63, 176, 172, 0.5) 0%, rgba(63, 176, 172, 0.75) 75%, rgb(63, 176, 172) 100%);
 }
 
-.projects-section p {
-	margin-bottom: 5rem;
-}
 
 .projectCover {
 	border-radius: 0.25rem;
 }
 
 .projectBG {
-	background-color: rgb(67, 67, 67)
+	background-color: rgb(221, 223, 212)
 }
 
 .copyright-section {
@@ -219,7 +230,7 @@ rgb(221, 223, 212)
 
 
 .contact-section {
-	padding: 5rem 0 0;
+	padding: 2.5rem 0 0 0;
 	background: linear-gradient(to top, rgb(63, 176, 172) 0%, rgba(63, 176, 172, 0.75) 75%, rgba(63, 176, 172, 0.5) 100%);
 	
 }
@@ -255,11 +266,11 @@ rgb(221, 223, 212)
 	background: rgba(221, 223, 212, 0.2);
 	border-radius: 100%;
 	line-height: 4rem;
-	color: rgba(221, 223, 212, 0.8);
+	color: rgba(23, 62, 67, 0.8);
 }
 
 .contact-section .social a:hover {
-	color: rgba(221, 223, 212, 1);
+	color: rgba(221, 223, 212, .8);
 }
 
 .contact-section .social a:active {
@@ -295,7 +306,7 @@ a:hover {
 }
 
 footer {
-	padding: 5rem 0;
+	padding: 2.5rem 0;
 }
 
 
@@ -436,9 +447,9 @@ footer {
 	}
 	.timeline>li .timeline-image {
 		left: 50%;
-		width: 100px;
-		height: 100px;
-		margin-left: -50px;
+		width: 85px;
+		height: 85px;
+		margin-left: -42.5px;
 	}
 	.timeline>li .timeline-image h4 {
 		font-size: 13px;
@@ -453,9 +464,7 @@ footer {
 }
 
 @media (min-width: 992px) {
-	.timeline:before {
-		left: 51.5%;
-	}
+	
 	.timeline>li {
 		min-height: 150px;
 	}
@@ -463,9 +472,9 @@ footer {
 		padding: 0 20px 20px;
 	}
 	.timeline>li .timeline-image {
-		width: 150px;
-		height: 150px;
-		margin-left: -75px;
+		width: 85px;
+		height: 85px;
+		margin-left: -42.5px;
 	}
 	.timeline>li .timeline-image h4 {
 		font-size: 18px;
@@ -487,7 +496,7 @@ footer {
 	.timeline>li .timeline-image {
 		width: 85px;
 		height: 85px;
-		margin-left: -26px;
+		margin-left: -42.5px;
 	}
 	.timeline>li .timeline-image h4 {
 		margin-top: 40px;
@@ -513,6 +522,8 @@ footer {
 .reference {
 	margin-bottom: 30px;
 	overflow: hidden;
+    border-radius: 0.25rem;
+/*    border-radius: 100%;*/
 }
 
 @media (max-width: 767.98px) {
@@ -537,6 +548,7 @@ footer {
 .reference img {
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
+    
 }
 
 .reference .overlay {
@@ -544,6 +556,7 @@ footer {
 	width: 100%;
 	height: 100%;
 	position: absolute;
+    border-radius: 0.25rem;
 	top: 0;
 	left: 0;
 	display: -webkit-box;
@@ -578,6 +591,7 @@ footer {
 .reference:hover img {
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
+    
 }
 
 .reference:hover .overlay {
@@ -589,31 +603,52 @@ footer {
 #detail {
 	display: none;
 }
+#detail p {
+	margin: 5px 0 0 0;
+}
 
-#detail .btn {
+.descriptionTitle {
+    color: rgb(23, 62, 67);
+    margin-top: .5rem
+}
+
+.projectIcons {
+    margin-bottom: 0;
+}
+
+.btn-outline-primary {
 	margin: 10px;
+    color: rgb(221, 223, 212);
+    background-color: rgb(23, 62, 67);
+    border-color: rgb(63, 176, 172);
+}
+
+.btn-outline-primary:hover {
+	background-color: rgb(63, 176, 172);
+    border-color: rgb(63, 176, 172);
+}
+
+.btn-outline-primary:active {
+	background-color: rgb(250, 229, 150)!important;
+    border-color: rgb(63, 176, 172)!important;
 }
 
 #detail .close {
-	position: absolute;
-	right: 0;
-	z-index: 999;
-	display: block;
-	width: 50px;
-	height: 50px;
-	margin-bottom: 20px;
-	font-size: 3rem;
-	opacity: 0.75;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	color: rgb(34, 35, 36);
-	text-shadow: 0 1px 0 rgb(149, 149, 149);
+	float: right;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-shadow: 0 0 0;
+    opacity: 1;
+    color: rgb(255, 255, 255);
 }
 
+/*
 #detail .close:hover {
 	opacity: 1;
 	color: rgb(196, 195, 195);
 }
+*/
 
 #detail-slider {
 	margin-top: 50px;
@@ -630,9 +665,14 @@ h1, h2, h4
 	color: rgb(250, 229, 150);
 }
 
+.p-lg-5 {
+    padding: 2.5rem 1rem 1rem 1rem !important;
+}
+
 h1 {
 	font-size: 6rem;
 	line-height: 5.5rem;
+    color: rgb(23, 62, 67);
 }
 
 h2 {
@@ -683,3 +723,6 @@ h2 {
 	color: rgb(91, 66, 131);
 }
 
+.devicon-visualstudio-plain:hover {
+	color: rgb(77, 47, 124);
+}
