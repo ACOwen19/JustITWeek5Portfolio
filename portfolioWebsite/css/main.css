@@ -24,11 +24,7 @@ rgb(221, 223, 212)
 }
 
 #mainNav .navbar-brand {
-	color: #161616;
-	font-weight: 700;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	padding: .9rem 0;
+	/* How to stop the logo jumping? */
 }
 
 #mainNav .nav-item {
@@ -39,6 +35,7 @@ rgb(221, 223, 212)
 	color: fade(white, 80%);
 	outline: none;
 	background-color: transparent;
+	
 }
 
 #mainNav .navbar-nav .nav-item:active,
@@ -59,6 +56,7 @@ rgb(221, 223, 212)
 	}
 	#mainNav .navbar-brand {
 		padding: .5rem 0;
+
 		color: rgba(221, 223, 212, 0.75);
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
@@ -81,10 +79,7 @@ rgb(221, 223, 212)
 	#mainNav.navbar-shrink {
 		background-color: #fff;
 	}
-	#mainNav.navbar-shrink .navbar-brand {
-		color: #161616;
-		font-size: 1.25em;
-	}
+
 	#mainNav.navbar-shrink .nav-link {
 		color: rgb(23, 62, 67);
 		padding: 1.5rem 1.5rem 1.25rem;
@@ -116,12 +111,12 @@ rgb(221, 223, 212)
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
-    color: rgb(23, 62, 67);
+    
     text-shadow:
-		-1px -1px 0 rgb(221, 223, 212),
-		1px -1px 0 rgb(221, 223, 212),
-		-1px 1px 0 rgb(221, 223, 212),
-		1px 1px 0 rgb(221, 223, 212);
+		-1px -1px 0 rgb(23, 62, 67),
+		1px -1px 0 rgb(23, 62, 67),
+		-1px 1px 0 rgb(23, 62, 67),
+		1px 1px 0 rgb(23, 62, 67);
 }
 
 .masthead h1 {
@@ -129,26 +124,34 @@ rgb(221, 223, 212)
 	font-size: 2.5rem;
 	line-height: 5rem;
 	letter-spacing: 0.8rem;
+	color: rgb(250, 229, 150);
     
 /*
 	background: -webkit-linear-gradient(rgba(63, 176, 172, 1), rgba(63, 176, 172, 0.8));
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 */
-   
+ 
 }
 
 .masthead h2 {
 	font-family: "Roboto Slab", serif;
 	max-width: 20rem;
 	font-size: 1rem;
-     color: rgb(23, 62, 67);
+     color: rgb(250, 229, 150);
 /*
 	background: -webkit-linear-gradient(rgba(23, 62, 67, 1), rgba(23, 62, 67, 1));
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 */
 }
+/*
+
+.aboutTrans {
+	width: 5%;
+	height: auto;
+}
+*/
 
 @media (min-width: 768px) {
 	.masthead h1 {
@@ -188,8 +191,7 @@ rgb(221, 223, 212)
 }
 
 .skills-section {
-	
-	background: linear-gradient(to top, rgb(63, 176, 172) 0%, rgba(63, 176, 172, 0.75) 75%, rgba(63, 176, 172, 0.5) 100%);
+	background: linear-gradient(to top, rgba(63, 176, 172, 0.5) 0%, rgba(63, 176, 172, 0.75) 10%, rgb(63, 176, 172) 50%, rgba(63, 176, 172, 0.75) 90%, rgba(63, 176, 172, 0.5) 100% );
 }
 
 .skills-section p {
@@ -199,7 +201,7 @@ rgb(221, 223, 212)
 .history-section {
 	padding-top: 2.5rem;
     padding-bottom: 6rem;
-	background:  rgb(63, 176, 172);
+	background:  linear-gradient(to top, rgb(63, 176, 172) 90%, rgba(63, 176, 172, 0.5) 100%);
 }
 
 .history-section p {
@@ -210,10 +212,8 @@ rgb(221, 223, 212)
 
 .projects-section {
 	padding-top: 2.5rem;
-	
 	background: linear-gradient(to top, rgba(63, 176, 172, 0.5) 0%, rgba(63, 176, 172, 0.75) 75%, rgb(63, 176, 172) 100%);
 }
-
 
 .projectCover {
 	border-radius: 0.25rem;
@@ -228,11 +228,17 @@ rgb(221, 223, 212)
 	color: rgb(23, 62, 67) !important;
 }
 
+.attribution-section a {
+	font-weight: bold;
+}
+
+.modal-footer {
+	padding: 0.5rem;
+}
 
 .contact-section {
 	padding: 2.5rem 0 0 0;
 	background: linear-gradient(to top, rgb(63, 176, 172) 0%, rgba(63, 176, 172, 0.75) 75%, rgba(63, 176, 172, 0.5) 100%);
-	
 }
 
 .contact-section .card {
@@ -633,6 +639,10 @@ footer {
     border-color: rgb(63, 176, 172)!important;
 }
 
+.btn-outline-primary:focus {
+box-shadow: 0 0 0 0 rgba(0,123,255,.5)!important;
+}
+
 #detail .close {
 	float: right;
     font-size: inherit;
@@ -711,8 +721,8 @@ h2 {
 	color: rgb(14, 121, 193);
 }
 
-.devicon-mysql-plain:hover {
-	color: rgb(0, 84, 107);
+.icon-mssql:hover {
+	color: rgb(193, 0, 0);
 }
 
 .devicon-jquery-plain:hover {

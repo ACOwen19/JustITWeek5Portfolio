@@ -918,3 +918,6 @@
 .devicon-zend-plain:before {
 	content: "\ec04";
 }
+
+
+.devicon-mssql:before { content: "\f153"; }
