@@ -219,7 +219,8 @@ rgb(221, 223, 212)
 }
 
 .projectBG {
-	background-color: rgb(221, 223, 212)
+	background-color: rgb(221, 223, 212);
+   
 }
 
 .copyright-section {
@@ -607,10 +608,23 @@ footer {
 
 #detail {
 	display: none;
+/*    padding: 0 17.5%;*/
 }
 #detail p {
 	margin: 5px 0 0 0;
 }
+
+#detail-title {
+    color: rgb(23, 62, 67); 
+}
+
+/*
+.owl-carousel .owl-item img {
+ display: inline-block;
+    width: auto;
+}
+*/
+
 
 .descriptionTitle {
     color: rgb(23, 62, 67);
