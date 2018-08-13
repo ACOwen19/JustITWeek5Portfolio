@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Archibald Owen">
+    <meta name="robots" content="all,follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Archibald Owen</title>
@@ -36,7 +37,7 @@
 <body id="page-top">
 
     <!------------------------------------------ NAVIGATION ------------------------------------------------------------>
-    <!-- TO DO: 3) Customise scrolling location -->
+    <!-- TO DO: 3) Customise scrolling location 4) Fix bouncing logo  -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/owlIconSmall.png"></a>
@@ -92,7 +93,7 @@
                     <p>Outside of work I enjoy playing rugby, competitive card games, cookery and reading fantasy &amp; sci-fi. I'm keen to take my next step into the world of development.
                         <p>
                 </div>
-                <div class="col-lg-3 mx-auto">
+                <div class="col-lg-3 mx-auto timeline-image">
                     <img src="img/aboutHSThree.png" class="rounded-circle img-fluid" id="aboutPic" alt="">
                 </div>
 
@@ -235,43 +236,34 @@
     </section>
 
     <!------------------------------------------ PROJECTS SECTION ----------------------------------------------->
-    <!-- TO DO:  3) CONTENT  4) ROUNDED CLICKBAIT? 5) TOP LEFT CLOSE CROSS 7) DARKEN CIRCLES-->
+    <!-- TO DO:  3) CONTENT  4) ROUNDED CLICKBAIT? 5) CHANGE OVERLAY STYLING? 6) MODALS? 7) DARKEN CIRCLES-->
     <section id="projects" class="projects-section text-center">
         <div class="container">
             <div class="col-sm-12">
                 <div class="mb-5 text-center">
                     <h2 data-animate="fadeInUp" class="mb-4">Demo Projects</h2>
                 </div>
-                <!------- Modal setup ------->
-                <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="detail-title" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div id="detail">
-                                <div class="modal-header">
-                                    <h2 id="detail-title" class="modal-title"></h2>
-                                           <button type="button" class="close topClose" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                                </div>
-                                <div class="modal-body text-left project-section">
-                                    
-                                        <div class="col-lg-10 mx-auto ">
-                                            <div id="detail-slider" class="owl-carousel owl-theme"></div>
-                                            <div id="detail-content"></div>
-                                        </div>
-                                   
+                <!------- Popout styling ------->
+                <div id="detail">
+                    <div class="row projectBG">
+                        <div class="col-lg-10 mx-auto ">
 
-                                </div>
+                            <div id="detail-slider" class="owl-carousel owl-theme"></div>
+                            <div class="text-center">
+                                <h2 id="detail-title" class="title"></h2>
+                            </div>
+                            <div id="detail-content"></div>
+                            <div>
+                                <p class="buttons  close btn btn-outline-primary"><i class="fas fa-times-circle"></i> Close </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <!------ Project details------->
                 <div id="references-masonry">
                     <div class="row">
                         <div class="reference-item col-lg-4 col-md-6" data-animate="fadeInLeft">
-                            <div class="reference" data-toggle="modal" data-target="#projectModal">
+                            <div class="reference">
                                 <a href="#"><img src="img/projectOne.png" alt="" class="img-fluid projectCover">
 									<div class="overlay">
 										<div class="inner">
@@ -305,12 +297,12 @@
                                     <p>I learnt the value of bootstrap and other similar technologies by doing without them when coding this project. I also reinforced my knowledge of functions and event handlers.</p>
                                     <h4 class="descriptionTitle">Future Scope</h4>
                                     <p>I would like to add the abillity for users to add words/categories.</p>
-                                    <p class="buttons text-center"><a href="javascript:void(0);" class=" btn btn-outline-primary"><i class="fas fa-play-circle"></i> Live Demo </a><a href="javascript:void(0);" class=" btn btn-outline-primary"><i class="fab fa-github"></i> GitHub </a>  <a class=" close btn btn-outline-primary" data-dismiss="modal"><i class="fas fa-times-circle"></i> Close </a></p> 
+                                    <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fas fa-play-circle"></i> Live Demo </a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fab fa-github"></i> GitHub </a> </p>
                                 </div>
                             </div>
                         </div>
                         <div class="reference-item col-lg-4 col-md-6" data-animate="fadeInUp">
-                            <div class="reference" data-toggle="modal" data-target="#projectModal">
+                            <div class="reference">
                                 <a href="#"><img src="img/projectTwo.png" alt="" class="img-fluid projectCover">
 									<div class="overlay">
 										<div class="inner">
@@ -344,12 +336,12 @@
                                     <p>I learnt the value of MVC when creating a multi-page site as well as reinforcing my knowledge of database first design and the Razor syntax </p>
                                     <h4 class="descriptionTitle">Future Scope</h4>
                                     <p>I would like to add the ability for users to input a map location for the club as well as moving to a multi-table database, linking clubs to the leagues/cups the compete in.</p>
-                                    <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fas fa-play-circle"></i> Live Demo </a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fab fa-github"></i> GitHub </a><a class=" close btn btn-outline-primary" data-dismiss="modal"><i class="fas fa-times-circle"></i> Close </a></p>
+                                    <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fas fa-play-circle"></i> Live Demo </a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fab fa-github"></i> GitHub </a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="reference-item col-lg-4 col-md-6" data-animate="fadeInRight">
-                            <div class="reference" data-toggle="modal" data-target="#projectModal">
+                            <div class="reference">
                                 <a href="#"><img src="img/projectThree.png" alt="" class="img-fluid projectCover">
 									<div class="overlay">
 										<div class="inner">
@@ -364,7 +356,7 @@
                                     <h4 class="descriptionTitle"> Technologies Used:</h4>
                                     <h4 class="descriptionTitle">Experience Gained</h4>
                                     <h4 class="descriptionTitle">Future Scope</h4>
-                                    <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fas fa-play-circle"></i> Live Demo </a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fab fa-github"></i> GitHub </a><a class=" close btn btn-outline-primary" data-dismiss="modal"><i class="fas fa-times-circle"></i> Close </a></p>
+                                    <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fas fa-play-circle"></i> Live Demo </a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fab fa-github"></i> GitHub </a></p>
                                 </div>
                             </div>
                         </div>
@@ -374,6 +366,7 @@
             </div>
         </div>
     </section>
+
 
 
     <!---------------------------------- CONTACT SECTION ----------------------------------->
@@ -471,6 +464,10 @@
     <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
     <!-- Custom JavaScript File -->
     <script src="js/portfolio.js"></script>
+
+
+    <!-- <script src="vendor/popper.js/umd/popper.min.js"></script> -->
+    <!-- Leaving in to try with tooltip.js later -->
 
 
 </body>
