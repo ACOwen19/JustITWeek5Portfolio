@@ -113,7 +113,7 @@ h4 {
 .masthead h2 {
     font-family: "Roboto Slab", serif;
     max-width: 20rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: rgb(250, 229, 150);
 
 }
@@ -433,6 +433,7 @@ h4 {
 #detail {
     display: none;
     border-radius: 5px;
+    
 }
 
 #detail p {
@@ -444,26 +445,23 @@ h4 {
     
 }
 
-#detail, .modal-header {
+.modal-header {
     justify-content: center;
     padding-bottom: 0;
     border-bottom: 2px solid rgb(23, 62, 67);
+
 }
 
-#detail, .modal-body {
-    background-color: rgb(221, 223, 212);
+.modal-body {
+   
     padding-top: 0;
    
 }
 
-.topClose {
-    float: right;
-    position: relative;
-    margin-left: 0!important;
-}
 
 .modal-content {
     border-radius: 5px;
+    background-color: rgb(221, 223, 212);
 }
 
 .descriptionTitle {
@@ -509,9 +507,19 @@ h4 {
     color: rgb(255, 255, 255);
 }
 
+.attribution-section .close {
+    float: none;
+    margin-bottom: 10px;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-shadow: 0 0 0;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
 
 #detail-slider {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 
@@ -577,6 +585,7 @@ h4 {
     background: linear-gradient(to top, rgba(63, 176, 172, 0.5) 0%, rgba(63, 176, 172, 0.75) 75%, rgb(63, 176, 172) 100%);
     color: rgb(23, 62, 67) !important;
 }
+
 
 .attribution-section a {
     font-weight: bold;
